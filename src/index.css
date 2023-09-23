@@ -53,6 +53,7 @@ input{
   padding: 0.6em 1.2em;
   font-weight: 500;
   margin-right: 10px;
+  box-shadow: 0 0 10px #ffa264aa, inset 0 0 10px #ffa264aa;
 }
 button:hover {
   filter: drop-shadow(0 0 2em #ffa264aa);
