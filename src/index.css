@@ -54,7 +54,10 @@ input{
   padding: 0.6em 1.2em;
   font-weight: 500;
   margin-right: 10px;
-  color: white;
+  color: #fc4b08;
+}
+input:focus{
+  outline: none;
 }
 button:hover {
   filter: drop-shadow(0 0 2em #ffa264aa);
