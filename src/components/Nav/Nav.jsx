@@ -2,7 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
 import megaLogo from  '../../assets/mega.png'
-import styles from '../Nav/nav.module.css';
+import styles from '../Nav/Nav.module.css';
 function Nav(){
     return (
         <nav className={styles.nav}>
