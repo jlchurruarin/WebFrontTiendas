@@ -2,6 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import TerminalIcon from '@mui/icons-material/Terminal';
+import WebIcon from '@mui/icons-material/Web';
 import { NavLink } from "react-router-dom";
 import megaLogo from  '../../assets/mega.png'
 import styles from '../Nav/Nav.module.css';
@@ -17,6 +18,7 @@ function Nav(){
           </ul>
           <ul className={styles.liLink}>
                 <li >
+                  <WebIcon/>
                   <NavLink
                     to={"/"}
                     style={({ isActive }) => ({
