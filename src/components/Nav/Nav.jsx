@@ -35,7 +35,18 @@ function Nav(){
                     Comandos POS
                   </NavLink>
                 </li>
-                <li><LocationOnIcon/><a href="https://www.google.com/maps/d/u/0/viewer?mid=1fROX-tIf7FeQf03IzBbFN0D2bhj5A_s&ll=-31.74198896616553%2C-55.02777490954791&z=4" target="_blank">MapTiendas</a></li>
+                <li>
+                <LocationOnIcon/>
+                  <NavLink
+                    to={"/map"}
+                    style={({ isActive }) => ({
+                      color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
+                    })}
+                  >
+                    MapTiendas
+                  </NavLink>
+                </li>
+                
                 <li><a className={styles.button} href="https://sites.google.com/gdnargentina.com/mdamegatech/instructivos" target="_blank">Instructivos</a></li>
           </ul>
         </nav>
