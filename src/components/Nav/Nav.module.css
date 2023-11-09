@@ -5,6 +5,8 @@
 }
 .nav li{
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 .liLink ul{
     padding: 0;
