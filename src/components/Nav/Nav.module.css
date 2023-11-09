@@ -19,19 +19,19 @@
    color: #EDEDED;
    margin-right: 30px;
    text-decoration: none;
+   transition: filter 300ms ease-in;
 }
-.nav a:hover {
-    filter: drop-shadow(0 0 2em rgba(238,123,4,1));
-  }
 .button {
     border-radius: 8px;
     border: 1px solid #E6621F;
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
-   
     cursor: pointer;
     transition: border-color 0.25s;
     transition: filter 300ms ease-in;
     color: white;
+  }
+  .nav a:hover {
+    filter: drop-shadow(0 0 2em rgba(238,123,4,1));
   }
