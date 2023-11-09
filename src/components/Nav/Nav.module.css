@@ -20,6 +20,9 @@
    margin-right: 30px;
    text-decoration: none;
 }
+.nav a:hover {
+    filter: drop-shadow(0 0 2em rgba(238,123,4,1));
+  }
 .button {
     border-radius: 8px;
     border: 1px solid #E6621F;
