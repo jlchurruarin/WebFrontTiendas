@@ -22,6 +22,15 @@ function Comandos() {
     }
 
   }
+  function getPromo(value) {
+
+    if (value == "") {
+      alert("Ingrese UPC")
+    } else {
+      navigator.clipboard.writeText(`grep ${value} /root/SKYNET/dpfile3/FILE.PMT`);
+    }
+
+  }
   const handleChange = (event) => {
     // 👇 Get input value from "event"
     if (event.target.value !== null) {
@@ -140,6 +149,15 @@ function Comandos() {
             <div className="card">
               <input className='textInput' placeholder='grep NUMERO_SKU /home/server/inq/M_HSHPLU.DAT | cut -c 4-15' onChange={handleChange}></input>
               <button className='btnCopy' onClick={() => getUpc(value)} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+          <div className='divCard'>
+            <p className='nameComando'>Promociones asociadas a un UPC:</p>
+            <div className="card">
+              <input className='textInput' placeholder='grep NUMERO_UPC /root/SKYNET/dpfile3/FILE.PMT' onChange={handleChange}></input>
+              <button className='btnCopy' onClick={() => getPromo(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
