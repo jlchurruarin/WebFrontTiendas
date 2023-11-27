@@ -31,6 +31,15 @@ function Comandos() {
     }
 
   }
+  function getGmrec(value) {
+
+    if (value == "") {
+      alert("Ingrese UPC")
+    } else {
+      navigator.clipboard.writeText(`grep ${value} /home/NCR/ArsPluMnt/work/processed/GMREC*`);
+    }
+
+  }
   const handleChange = (event) => {
     // 👇 Get input value from "event"
     if (event.target.value !== null) {
@@ -158,6 +167,15 @@ function Comandos() {
             <div className="card">
               <input className='textInput' placeholder='grep NUMERO_UPC /root/SKYNET/dpfile3/FILE.PMT' onChange={handleChange}></input>
               <button className='btnCopy' onClick={() => getPromo(value)} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+          <div className='divCard'>
+            <p className='nameComando'>Verificar novedades en GMREC:</p>
+            <div className="card">
+              <input className='textInput' placeholder='grep NUMERO_UPC /home/NCR/ArsPluMnt/work/processed/GMREC*' onChange={handleChange}></input>
+              <button className='btnCopy' onClick={() => getGmrec(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
