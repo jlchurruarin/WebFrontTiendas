@@ -190,9 +190,9 @@ function Comandos() {
             </div>
           </div>
           <div className='divCard'>
-            <p className='nameComando'>Verificar precio:</p>
+            <p className='nameComando'>Verificar precio en POS / ARS:</p>
             <div className="card">
-              <input className='textInput' placeholder='grep NRO_UPC/home/server/inq//M_HSHPLU.DAT | sort' onChange={handleChange}></input>
+              <input className='textInput' placeholder='grep NRO_UPC /home/server/inq//M_HSHPLU.DAT | sort' onChange={handleChange}></input>
               <button className='btnCopy' onClick={() => getPre(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
