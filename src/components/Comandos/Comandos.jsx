@@ -40,6 +40,15 @@ function Comandos() {
     }
 
   }
+  function getPre(value) {
+
+    if (value == "") {
+      alert("Ingrese UPC")
+    } else {
+      navigator.clipboard.writeText(`grep ${value} /home/server/inq//M_HSHPLU.DAT | sort`);
+    }
+
+  }
   const handleChange = (event) => {
     // 👇 Get input value from "event"
     if (event.target.value !== null) {
@@ -176,6 +185,15 @@ function Comandos() {
             <div className="card">
               <input className='textInput' placeholder='grep NUMERO_UPC /home/NCR/ArsPluMnt/work/processed/GMREC*' onChange={handleChange}></input>
               <button className='btnCopy' onClick={() => getGmrec(value)} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+          <div className='divCard'>
+            <p className='nameComando'>Verificar precio:</p>
+            <div className="card">
+              <input className='textInput' placeholder='grep NRO_UPC/home/server/inq//M_HSHPLU.DAT | sort' onChange={handleChange}></input>
+              <button className='btnCopy' onClick={() => getPre(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
