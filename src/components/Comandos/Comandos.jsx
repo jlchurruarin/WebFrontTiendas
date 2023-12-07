@@ -49,6 +49,15 @@ function Comandos() {
     }
 
   }
+  function getPrePos(value) {
+
+    if (value == "") {
+      alert("Ingrese UPC")
+    } else {
+      navigator.clipboard.writeText(`grep ${value} /home/reg/gd90/inq/S_HSHPLU.DAT`);
+    }
+
+  }
   const handleChange = (event) => {
     // 👇 Get input value from "event"
     if (event.target.value !== null) {
@@ -190,9 +199,18 @@ function Comandos() {
             </div>
           </div>
           <div className='divCard'>
-            <p className='nameComando'>Verificar precio en POS / ARS:</p>
+            <p className='nameComando'>Verificar precio en  ARS:</p>
             <div className="card">
-              <input className='textInput' placeholder='grep NRO_UPC /home/server/inq//M_HSHPLU.DAT | sort' onChange={handleChange}></input>
+              <input className='textInput' placeholder='grep NRO_UPC /home/reg/gd90/inq/S_HSHPLU.DAT | sort' onChange={handleChange}></input>
+              <button className='btnCopy' onClick={() => getPrePos(value)} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+          <div className='divCard'>
+            <p className='nameComando'>Verificar precio en POS:</p>
+            <div className="card">
+              <input className='textInput' placeholder='grep NRO_UPC /home/server/inq/S_HSHPLU.DAT | sort' onChange={handleChange}></input>
               <button className='btnCopy' onClick={() => getPre(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
