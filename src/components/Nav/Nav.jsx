@@ -2,6 +2,7 @@ import React from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import WebIcon from '@mui/icons-material/Web';
+import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import { NavLink } from "react-router-dom";
 import megaLogo from  '../../assets/mega.png'
 import styles from '../Nav/Nav.module.css';
@@ -36,6 +37,17 @@ function Nav(){
                     })}
                   >
                     Comandos POS
+                  </NavLink>
+                </li>
+                <li>
+                  <FormatListNumberedIcon />
+                  <NavLink
+                    to={"/checksum"}
+                    style={({ isActive }) => ({
+                      color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
+                    })}
+                  >
+                    Dígito de control
                   </NavLink>
                 </li>
                 <li>
