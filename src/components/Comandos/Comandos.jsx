@@ -45,7 +45,7 @@ function Comandos() {
     if (value == "") {
       alert("Ingrese UPC")
     } else {
-      navigator.clipboard.writeText(`grep ${value} /home/server/inq//M_HSHPLU.DAT | sort`);
+      navigator.clipboard.writeText(`grep ${value} /home/server/inq/M_HSHPLU.DAT`);
     }
 
   }
