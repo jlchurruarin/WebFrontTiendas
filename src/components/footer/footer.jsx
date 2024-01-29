@@ -3,10 +3,12 @@ import '../footer/footer.css'
 
 export default function Footer() {
   return (
-    <footer bgColor='light' className='footer'>
-      
+    <footer className='footer'>
+      <div className='descriptionFooter'>
+      <p> Equipo MDA </p>
         &copy; {new Date().getFullYear()} Copyright: {' '}
-        <p> By Leandro Sarvi</p>
+      </div>
+        
       
     </footer>
   );

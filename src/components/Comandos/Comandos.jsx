@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Snackbar from '@mui/material/Snackbar';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import megaLogo from '../../assets/mega.png'
 import Loading from "../Loading/Loading";
 import '../Comandos/Comandos.css'
 

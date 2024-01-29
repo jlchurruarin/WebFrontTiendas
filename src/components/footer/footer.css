@@ -1,6 +1,11 @@
-footer{
+.footer{
+    margin-top: 30px;
+    bottom: 0;
+    padding: 20px;
+}
+.descriptionFooter{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    color: rgba(238,123,4,1);
 }
