@@ -1,0 +1,479 @@
+Cargar los siguientes datos en la tabla tiendas
+nro_tienda
+1002
+1003
+1004
+1005
+1006
+1007
+1008
+1010
+1011
+1012
+1013
+1014
+1015
+1016
+1017
+1018
+1020
+1021
+1022
+1023
+1024
+1026
+1027
+1028
+1029
+1030
+1031
+1032
+1033
+1035
+1036
+1037
+1038
+1039
+1042
+1043
+1044
+1045
+1046
+1050
+1051
+1052
+1053
+1054
+1055
+1056
+1057
+1058
+1059
+1060
+1061
+1067
+1068
+1074
+1075
+1076
+1077
+1078
+1080
+1081
+1082
+1084
+1085
+1086
+1087
+1088
+1092
+1093
+1096
+1097
+1098
+1099
+1100
+1106
+1108
+1110
+1111
+1114
+1115
+1116
+1119
+2997
+2998
+2999
+3601
+3602
+3603
+3604
+3605
+3606
+3608
+3613
+4001
+
+ip_tienda
+29.160.1.252,
+29.160.9.252,
+29.160.17.252,
+29.160.25.252,
+29.160.33.252,
+29.160.41.252,
+29.160.137.252,
+29.160.169.252,
+10.4.17.252,
+29.160.185.252,
+29.160.185.252,
+29.160.201.252,
+29.160.233.252,
+29.160.233.252,
+29.160.241.252,
+29.160.145.252,
+29.160.153.252,
+29.160.161.252,
+29.160.209.252,
+29.160.193.252,
+29.160.193.252,
+29.161.17.252,
+29.161.1.252,
+29.161.9.252,
+29.161.41.252,
+29.161.25.252,
+29.161.49.252,
+29.161.57.252,
+29.161.33.252,
+29.161.65.252,
+29.161.73.252,
+29.161.81.252,
+29.161.177.252,
+29.161.177.252,
+29.161.161.252,
+29.161.169.252,
+29.161.129.252,
+29.161.137.252,
+29.161.153.252,
+29.161.185.252,
+29.161.193.252,
+29.161.201.252,
+29.161.209.252,
+29.161.217.252,
+29.161.225.252,
+29.161.233.252,
+29.161.241.252,
+29.161.249.252,
+29.162.1.252,
+29.162.9.252,
+29.162.17.252,
+29.162.137.252,
+29.162.57.252,
+29.162.65.252,
+29.162.25.252,
+29.162.73.252,
+29.162.145.252,
+29.162.105.252,
+29.162.113.252,
+29.162.161.252,
+29.162.169.252,
+29.162.177.252,
+29.162.193.252,
+29.162.201.252,
+29.162.249.252,
+29.162.217.252,
+29.162.225.252,
+29.162.233.252,
+29.163.113.252,
+29.163.89.252,
+29.163.81.252,
+29.163.97.252,
+29.163.121.252,
+29.163.57.252,
+29.163.49.252,
+29.163.41.252,
+29.163.129.252,
+29.163.145.252,
+29.163.177.252,
+29.163.193.252,
+29.163.185.252,
+29.163.201.252,
+29.163.209.252,
+29.163.233.252,
+29.163.249.252,
+29.160.49.252,
+29.160.57.252,
+29.160.65.252,
+29.160.73.252,
+29.160.81.252,
+29.160.89.252,
+29.160.97.252,
+29.160.105.252,
+29.160.113.252,
+29.160.121.252,
+29.160.129.252,
+10.128.11.60
+
+tipo
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+PM (PuntoMayorista)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+PM (PuntoMayorista)
+HCH+ (Hiperchangomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+Super CH+ (Super changoMas)
+CH+ (Changomas)
+CH+ (Changomas)
+Super CH+ (Super changoMas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+Super CH+ (Super changoMas)
+Super CH+ (Super changoMas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+Super CH+ (Super changoMas)
+Super CH+ (Super changoMas)
+Super CH+ (Super changoMas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+CH+ (Changomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+Super CH+ (Super changoMas)
+CH+ (Changomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+CH+ (Changomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+HCH+ (Hiperchangomas)
+no tipo
+provincia
+Córdoba
+San Luis
+GBA
+Mendoza
+San Juan
+La Rioja
+Corrientes
+Córdoba
+Salta
+Santiago del Estero
+GBA
+Buenos Aires
+Mendoza
+GBA
+GBA
+GBA
+Tucumán
+Neuquén
+Rio Negro
+La Pampa
+Formosa
+Catamarca
+CABA
+GBA
+GBA
+GBA
+Jujuy
+GBA
+Tucumán
+GBA
+GBA
+GBA
+Rio Negro
+Entre Rios
+Chubut
+GBA
+GBA
+GBA
+Buenos Aires
+GBA
+Misiones
+Salta
+Rio Negro
+Buenos Aires
+San Luis
+Córdoba
+Chubut
+Chaco
+GBA
+Córdoba
+Buenos Aires
+Mendoza
+Mendoza
+Corrientes
+Salta
+GBA
+La Pampa
+Salta
+Santiago del Estero
+San Juan
+Tucumán
+GBA
+Corrientes
+Formosa
+GBA
+Tucumán
+San Juan
+Chubut
+GBA
+Córdoba
+Chaco
+Misiones
+La Pampa
+Tucumán
+Chubut
+GBA
+Jujuy
+Formosa
+Rio Negro
+GBA
+GBA
+CABA
+GBA
+GBA
+Buenos Aires
+Buenos Aires
+Santa Fe
+Entre Rios
+Córdoba
+Córdoba
+Neuquén
+Mendoza
+no provincia
+
+direccion
+Juan B. Justo 2052, Río Cuarto, Córdoba ( X5806ELB )
+Av del Fundador 1450 y Ruta 7, San Luis ( 5700 )
+Cno.Bancalari Boulogne s/n entre 202 y Uruguay, S. Fernando (1646)
+Boulogne Sur Mer s/n y Regalado Olguin, Las Heras Mendoza ( 5500 )
+José Ignacio de la Roza Oeste 806, Rivadavia, San Juan ( J5402DCV )
+Av.Ortiz de Ocampo 1127 y Ejército Argentino, La Rioja (5300)
+Gregorio Pomar 840, Corrientes ( W3402CBJ )
+Av Circunvalación Este 2557, Córdoba ( X5011CZG )
+Av Paraguay 1450 y Av Bélgica, Salta ( 4400 )
+Av Belgrano Sud 2663 (esq.Suarez), Bo.Ramon Carrillo, Sgo del Estero ( G4200ACA )
+Colombia 1212, El Talar, Tigre ( CP1617 )
+Payró 198, Barrio Juan 23, Luján, Pcia. De Bs.As ( CP 6700 )
+Maza 470, Maipú - Mendoza (CP M5515)
+Autopista BsAs-La Plata , km 9 Sarandí, Bs As (1870)
+Monseñor Bufano 6050, La Tablada ( B7163XAA )
+Av Calchaquí 700, Quilmes ( B1879ESQ )
+Av.Camino del Perú 950 ( CP4000 ) S M de Tucumán
+Av.Belgrano 2735 ( CP8300 ), Neuquén
+Av. J.Hermann e/Pasaje Gutierrez y Calfu-Co, Bariloche, Rio Negro ( CP 8400 )
+Av. Circunvalación Santiago Marzo 1550, villa Alonso Norte, Santa Rosa  (CP 6300)
+ Av. Gunitsky 3636 entre Av. J. de Pueyrredón y Brandsen (CP 3600)
+Av.Acosta Villafañe 2420, Catamarca( CP 4700 )
+Eva Perón 5526 y Miralla, Capital Federal( CP 1440 )
+Av. Espora 2074 , Partido de Alte Brown( CP 1846 )
+Av. Julio Argentino Roca al 3500 entre Santos Dumont y Vasco Da Gamma, a 3 cuadras de Av. Del Libertador (Ruta 23), Partido de Moreno, GBA ( CP 1744 )
+Av. Gaspar Campos 5690 entre Juan Díaz de Solís y Pueyrredón, Partido de José C. Paz ( CP 1665 )
+Riobamba y Ruta 9, San Salvador de Jujuy ( CP 4600 )
+Av. Del Sesquincentenario,  Malvinas Argentinas, GBA ( CP 1846 )
+Guatemala y San Martín, Banda Rio Sali, Tucuman ( CP 4109 )
+Av. Presidente Juan Domingo Perón Nº9150 ( CP B1687AEV )
+Martinez Melo 151 (Es la entrada al shopping y estacionamiento) ( CP B1744FDC )
+Estrada 3072 / 82 / 84 ( CP 1650 )
+Calle Bolivia 1169 esq. Primeros Pobladores (951), Ciudad de Cipolletti, Prov. De Río Negro ( CP 8324 )
+Av. Blas Parera 1152  ( CP3100 )
+Av. Peron Ruta N°719 (CP 9102)
+Ruta 21 y Carlos Casares, Laferrere, PBA ( CP 1757 )
+Av. Villegas 2750 ( esquina Malaspina )
+Av. Vergara 2950
+Boulevard Dardo Rocha Nº 280, entre San luis y Catamarca
+Boulevard de los Italianos 321, entre calles Belgrano y Donato Alvarez ( CP 1824 )
+Av Tambor de Tacuari 5158 / 5198 ó Zapiola 2149  ( CP 3300 )
+Av.Pueyrredon y Av.Palacios , Oran ( CP 4530 ) Salta
+Tierra del Fuego 514 entre Calle Colectora de Av. Cardenal Cagliero y Corrientes, Pcia. De Río Negro ( CP 8500 )
+Av. Rivadavia 4370, Olavarria ( CP B7400CVP )
+Av Juan Domingo Peron 825, Pcia. De San Luis ( CP 5730 )
+Av. Carranza 980 ( entre calle Lima y Costanera ) Villanueva, Pcia. De Córdoba (CP 5903)
+Chile y Girolamo, Comodoro Rivadavia, Chubut ( CP 9000 )
+Rta. 11 y Marconi, Pcia. Del Chaco ( CP 3500 )
+Ruta 3 n° 14446, La Matanza
+Avda  Fuerza Aerea  Nº 4372 entre Av. Richardson y Av. Camilotti.
+Ruta 7 Km. 260.9 (y  Sargento cabral) ( CP 6000 )
+Av. Boulogne Sur Mer 700. San Martin – Mendoza ( CP 5570 )
+Calle San Martin Sur 2575 y Calle Laguna del Diamante – Godoy Cruz – MENDOZA. 
+Av. Sarmiento 721 esquina calle soto ( CP 3450 )
+Av. Fuerza Aerea S/N esquina Aguas Blancas   CP: 4400
+Cerrito S/N esquina R. Dario (CP: 1832)
+Av. 319 y Calle 308 – COLECTORA Ruta Nac 101 – Gral Pico – LA PAMPA
+Paraguay y ruta Nac. Nº34 – Tartagal - Salta  (CP 4560)
+Colectora Circunvalación y Av. Contreras
+Av. Doctor Ortega y Las Vicentinas – Rawson – SAN JUAN
+Av. Jujuy entre Democracia y P. Fernandez
+Av. 25 de mayo 37 San Vicente
+Av.Maipu y Los Condores
+Av.Maradona y Somacal
+Colectora Acceso Norte N°51500, Localidad de Pilar, Partido de Pilar, Provincia de Buenos Aires
+Av Güemes y Av Francia – Concepción – Pcia de Tucumán.
+Av. Benavidez 1050 esq. Colón. Cdad de San Juan (CP 5413)
+Ruta nacional 3, Km. 4, frente a avenida Tehuelches, barrio 25 de Mayo, Comodoro Rivadavia.
+Av.Gral Justo Jose de Urquiza 4320, Caseros, Provincia de Buenos Aires
+Av. Donato Alvarez (altura 8600, según informe de transito)  entre las calles Tipayante y Malalco – Barrio UOCRA – Ciudad de Córdoba
+Interseccion de las Av. Juan Manuel de Rosas (101) y calle Arturo Illia (128 ) , ciudad de Roque Saenz Peña , Pcia Chaco
+Av . Alicia Moreau de Justo y Av. Cabo de Hornos , ciudad de Posadas , Provincia de Misiones .
+Colectora de Av. Pte Peron y Ultracán.-
+Ejercito del Norte 2324 (CP 4000)
+Juan B Justo 1885 (CP 9120)
+LACAZE 3963. CLAYPOLE
+San Gabriel 712 (CP 4500)
+ Av. Tucumán 201 y Bme. Mitre (CP 3610),Clorinda, Formosa
+Chulavista 1550, Gral Roca, Rio Negro
+Don Bosco  5635 Morón - CP (1708)
+Av. Derqui 5602 - Cuartel V  - Moreno 
+Albarellos 2565 Cap Fed ( C1431EZY )
+Brig.Gral.Juan Manuel de Rosas 3990, San Justo ( B1754FUX )
+Av.Guemes 861, Avellaneda ( B1873BOG )
+Camino Centenario 1876, La Plata ( B1900GBA )
+Av. Sarmiento 4114, Bahía Blanca ( B8002HGJ )
+Ruta Nacional 168, km473.6, Santa Fe (3000)
+Anacleto Medina 319 - Paraná, Entre Ríos (E3100DFG)
+Colón 6051, Córdoba ( X5003DFS )
+Mauricio Yadarola 1699, Córdoba ( 5000 )
+Perticone 1255, Neuquén ( 8300 )
+Moldes 1023 y Acceso Sur - Dorrego, Guaymallén ( M5626EAS )
+sin direccion
+
