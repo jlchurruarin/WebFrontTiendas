@@ -68,7 +68,7 @@ function Comandos() {
     "/home/WMAR/check_POS.sh", "lsusb", "cat /etc/hosts", "/home/reg/gd90/sh/./DECLARE_OK.SH",
     "service epson_devicecontrollogserviced status\nservice epson_pcsvcd status\nservice epson_pcsvcd restart\nservice epson_devicecontrollogserviced restart\n",
     "service Wildfly status\nservice Wildfly restart\nservice ArsPluMnt status\nservice ArsPluMnt restart\nservice POSServerRest status\nservice POSServerRest restart\nservice UserWatcher status\nservice UserWatcher restart",
-    "dmidecode -t system", "service --status-all"]
+    "dmidecode -t system", "service --status-all","pos ws-list"]
   useEffect(() => {
     const timer = setTimeout(() => {
       setloading(false);
@@ -96,6 +96,15 @@ function Comandos() {
                 autoHideDuration={1000}
                 message="¡Comando copiado!"
               />
+            </div>
+          </div>
+          <div className='divCard'>
+            <p className='nameComando'>Listar de cajas +info</p>
+            <div className="card">
+              <input disabled className='textInput' value={comandos[2]}></input>
+              <button className='btnCopy' onClick={() => copy(comandos[9])} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
             </div>
           </div>
           <div className='divCard'>
