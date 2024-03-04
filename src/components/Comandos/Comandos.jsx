@@ -101,7 +101,7 @@ function Comandos() {
           <div className='divCard'>
             <p className='nameComando'>Listar de cajas +info</p>
             <div className="card">
-              <input disabled className='textInput' value={comandos[2]}></input>
+              <input disabled className='textInput' value={comandos[9]}></input>
               <button className='btnCopy' onClick={() => copy(comandos[9])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
