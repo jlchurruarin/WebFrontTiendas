@@ -68,7 +68,7 @@ function Comandos() {
     "/home/WMAR/check_POS.sh", "lsusb", "cat /etc/hosts", "/home/reg/gd90/sh/./DECLARE_OK.SH",
     "service epson_devicecontrollogserviced status\nservice epson_pcsvcd status\nservice epson_pcsvcd restart\nservice epson_devicecontrollogserviced restart\n",
     "service Wildfly status\nservice Wildfly restart\nservice ArsPluMnt status\nservice ArsPluMnt restart\nservice POSServerRest status\nservice POSServerRest restart\nservice UserWatcher status\nservice UserWatcher restart",
-    "dmidecode -t system", "service --status-all","pos ws-list"]
+    "dmidecode -t system", "service --status-all","pos ws-list","cd /root/SKYNET/dpfile3/ && ll",'cd "/home/reg/DP/NCR/DigitalPromotions/Promotion Files" && ll']
   useEffect(() => {
     const timer = setTimeout(() => {
       setloading(false);
@@ -175,6 +175,24 @@ function Comandos() {
             <div className="card">
               <input disabled className='textInput' value={comandos[8]}></input>
               <button className='btnCopy' onClick={() => copy(comandos[8])} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+          <div className='divCard'>
+            <p className='nameComando'>verificar PMT en ARS</p>
+            <div className="card">
+              <input disabled className='textInput' value={comandos[10]}></input>
+              <button className='btnCopy' onClick={() => copy(comandos[10])} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+          <div className='divCard'>
+            <p className='nameComando'>verificar PMT en POS</p>
+            <div className="card">
+              <input disabled className='textInput' value={comandos[11]}></input>
+              <button className='btnCopy' onClick={() => copy(comandos[11])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>

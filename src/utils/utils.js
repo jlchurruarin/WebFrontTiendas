@@ -97,7 +97,14 @@ const tiendas = {"1002":"29.160.1.252",
           Object.keys(tiendas).forEach((clave) => {
               if (clave === text) {
                   const valor = tiendas[clave];
-                  window.open(`https://${valor}:8443/WebFrontBase/~./core/login.zul`);
+                  // Abrir una nueva ventana o pestaña
+  var nuevaVentana = window.open(`https://${valor}:8443/WebFrontBase/~./core/login.zul`, '_blank');
+
+  // Esperar a que la ventana se abra completamente
+  nuevaVentana.onload = function() {
+    // Enviar credenciales a la ventana o pestaña abierta
+    nuevaVentana.postMessage({ username: 9999, password: 1111 }, `https://${valor}:8443/WebFrontBase/~./core/login.zul`);
+  };
               }
           });
         }
