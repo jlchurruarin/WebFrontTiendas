@@ -13,7 +13,7 @@ function App() {
     <>
     <Nav/>
       <BrowserRouter>
-      <Sidebar/>s
+      <Sidebar/>
           <Routes>
             <Route path="/" element={<WebFront/>} />
             <Route path="/commands" element={<Comandos/>} />
