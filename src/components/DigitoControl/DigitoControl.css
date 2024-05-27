@@ -1,3 +1,11 @@
+.main-content {
+  margin-top: 60px; /* Altura de la barra superior */
+  margin-left: 250px; /* Ancho del menú lateral */
+  padding: 20px;
+  height: 100%;
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté por debajo de la barra superior y del sidebar */
+}
   .containerCkeck{
     max-width: 760px;
     margin: 0 auto;

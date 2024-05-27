@@ -19,7 +19,8 @@ function WebFront() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="containerWF">
+        <div className="main-content">
+<div className="containerWF">
           <h1><span className="resaltado">¡</span> WebFront por tienda <span className="resaltado">!</span></h1>
           <div className="cardWF">
             <input className="inputWF"
@@ -46,6 +47,8 @@ function WebFront() {
             <span className='resaltado'>Recordá tener activa la VPN</span>
           </p>
         </div>
+        </div>
+        
       )}
 
     </>

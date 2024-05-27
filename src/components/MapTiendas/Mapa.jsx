@@ -17,10 +17,13 @@ function Mapa() {
       {loading ? (
         <Loading />
       ) : (
-        <div >
+        <div className="main-content">
+          <div className="containerWF">
           <h1><span className="resaltado">¡</span> Mapa de todas las tiendas <span className="resaltado">!</span></h1>
           
           <iframe src="https://www.google.com/maps/d/embed?mid=1fROX-tIf7FeQf03IzBbFN0D2bhj5A_s&ehbc=2E312F" width="1020" height="720"></iframe>
+          </div>
+          
         </div>
       )}
 

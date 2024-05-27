@@ -9,60 +9,14 @@ import styles from '../Nav/Nav.module.css';
 function Nav(){
     return (
         <nav className={styles.nav}>
-          <ul>
+          <ul >
           <li>
             <a href="/">
           <img src={megaLogo} className={styles.logo} alt="Vite logo" />
+
         </a>
             </li>
-          </ul>
-          <ul className={styles.liLink}>
-                <li >
-                  <WebIcon/>
-                  <NavLink
-                    to={"/"}
-                    style={({ isActive }) => ({
-                      color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
-                  >
-                    WebFront
-                  </NavLink>
-                </li>
-                <li>
-                  <TerminalIcon/>
-                  <NavLink
-                    to={"/commands"}
-                    style={({ isActive }) => ({
-                      color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
-                  >
-                    Comandos POS
-                  </NavLink>
-                </li>
-                <li>
-                  <FormatListNumberedIcon />
-                  <NavLink
-                    to={"/checksum"}
-                    style={({ isActive }) => ({
-                      color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
-                  >
-                    Dígito de control
-                  </NavLink>
-                </li>
-                <li>
-                <LocationOnIcon/>
-                  <NavLink
-                    to={"/map"}
-                    style={({ isActive }) => ({
-                      color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
-                  >
-                    MapTiendas
-                  </NavLink>
-                </li>
-                
-                <li><a className={styles.button} href="https://sites.google.com/gdnargentina.com/mdamegatech/instructivos" target="_blank">Instructivos</a></li>
+            <li><a className={styles.button} href="https://sites.google.com/gdnargentina.com/mdamegatech/instructivos" target="_blank">Instructivos</a></li>
           </ul>
         </nav>
       );

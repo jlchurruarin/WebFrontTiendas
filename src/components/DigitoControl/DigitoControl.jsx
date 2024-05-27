@@ -49,7 +49,8 @@ function DigitoControl() {
       {loading ? (
         <Loading />
       ) : (
-      <div className='containerCkeck'>
+        <div className='main-content'>
+          <div className='containerCkeck'>
         <h1><span className='resaltado'>¡</span> Calcular dígito de control EAN-13 <span className='resaltado'>!</span></h1>
         <div className='containerCheckSum'>
           
@@ -72,7 +73,9 @@ function DigitoControl() {
           
           
         </div>
-      </div>)}
+      </div>
+        </div>
+      )}
     </>
 
   )
