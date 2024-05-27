@@ -6,7 +6,7 @@ import Nav from './components/Nav/Nav.jsx'
 import Mapa from './components/MapTiendas/Mapa.jsx'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Sidebar from './components/sidebar/sidebar.jsx'
+import Sidebar from './components/Sidebar/Sidebar.jsx'
 
 function App() {
   return (

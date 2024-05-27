@@ -4,7 +4,7 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import WebIcon from '@mui/icons-material/Web';
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import { NavLink } from "react-router-dom";
-import styles from '../sidebar/Sidebar.module.css';
+import styles from './Sidebar.module.css';
 function Sidebar(){
     return (
         <nav className={styles.sidebar}>
