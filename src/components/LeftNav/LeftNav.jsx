@@ -4,8 +4,8 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import WebIcon from '@mui/icons-material/Web';
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import { NavLink } from "react-router-dom";
-import styles from './Sidebar.module.css';
-function Sidebar(){
+import styles from './LeftNav.module.css';
+function LeftNav(){
     return (
         <nav className={styles.sidebar}>
           <ul>
@@ -75,4 +75,4 @@ function Sidebar(){
       );
 
 }
-export default Sidebar;
+export default LeftNav;

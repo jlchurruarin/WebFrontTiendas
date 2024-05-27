@@ -6,14 +6,14 @@ import Nav from './components/Nav/Nav.jsx'
 import Mapa from './components/MapTiendas/Mapa.jsx'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Sidebar from './components/Sidebar/Sidebar.jsx'
+import LeftNav from './components/LeftNav/LeftNav.jsx'
 
 function App() {
   return (
     <>
     <Nav/>
       <BrowserRouter>
-      <Sidebar/>
+      <LeftNav/>
           <Routes>
             <Route path="/" element={<WebFront/>} />
             <Route path="/commands" element={<Comandos/>} />
