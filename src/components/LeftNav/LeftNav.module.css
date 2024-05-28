@@ -19,7 +19,7 @@
 .sidebar ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 20px;
+    padding: 0;
 }
 
 .sidebar ul li {
@@ -30,7 +30,6 @@
 }
 .sidebar a{
    color: #EDEDED;
-   margin-left: 20px;
    text-decoration: none;
    transition: filter 300ms ease-in;
 }
@@ -74,4 +73,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.navLink span{
+    margin-left: 20px;
+}
+.navLinkActive{
+    color: rgba(238,123,4,1);
 }

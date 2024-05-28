@@ -12,63 +12,73 @@ function LeftNav(){
           <ul>
           <img src={megaLogo} className={styles.logo} alt="Vite logo" />
           <li>
-          <WebIcon/>
+          
                   <NavLink
                     to={"/"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
+                    }
+                )}
                   >
-                    WebFront
+                    <div className={styles.navLink}>
+                    <WebIcon/>
+                    <span>WebFront</span>
+                    </div>
 
                   </NavLink>
                 </li>
                 <li>
-                  <TerminalIcon/>
                   <NavLink
                     to={"/commands"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     })}
                   >
-                    Comandos POS
+                    <div className={styles.navLink}>
+                    <TerminalIcon/>
+                    <span>Comandos POS</span>
+                    </div>
                   </NavLink>
                 </li>
                 <li>
-                  <TerminalIcon/>
                   <NavLink
                     to={"/commandspricing"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     })}
                   >
-                    Comandos Pricing
+                    <div className={styles.navLink}>
+                    <TerminalIcon/>
+                    <span>Comandos Pricing</span>
+                    </div>
                   </NavLink>
                 </li>
                 <li>
-                  <FormatListNumberedIcon />
                   <NavLink
                     to={"/checksum"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     })}
                   >
-                    Dígito de control
+                    <div className={styles.navLink}>
+                    <FormatListNumberedIcon />
+                    <span>Dígito de control</span>
+                    </div>
                   </NavLink>
                 </li>
                 <li>
-                <LocationOnIcon/>
                   <NavLink
                     to={"/map"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     })}
                   >
-                    MapTiendas
+                    <div className={styles.navLink}>
+                    <LocationOnIcon/>
+                    <span>MapTiendas</span>
+                    </div>
                   </NavLink>
                 </li>
-                
-            
           </ul>
           <ul className={styles.version}>
         <li><span>v3.1</span></li>
