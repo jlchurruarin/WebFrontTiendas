@@ -19,7 +19,7 @@ function LeftNav(){
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     },
                     {
-                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                      background: isActive ? "rgba(238, 125, 4, 0.3)" : "",
                     }
                 )}
                   >
@@ -37,7 +37,7 @@ function LeftNav(){
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     },
                     {
-                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                      background: isActive ? "rgba(238, 125, 4, 0.3)" : "",
                     }
                   )}
                   >
@@ -54,7 +54,7 @@ function LeftNav(){
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     },
                     {
-                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                      background: isActive ? "rgba(238, 125, 4, 0.3)" : "",
                     }
                   )}
                   >
@@ -71,7 +71,7 @@ function LeftNav(){
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     },
                     {
-                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                      background: isActive ? "rgba(238, 125, 4, 0.3)" : "",
                     }
                   )}
                   >
@@ -88,7 +88,7 @@ function LeftNav(){
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
                     },
                     {
-                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                      background: isActive ? "rgba(238, 125, 4, 0.3)" : "",
                     }
                   )}
                   >
