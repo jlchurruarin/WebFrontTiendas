@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    border-right: 1px solid rgb(71, 71, 71);
+    border-right: 1px solid rgb(70, 70, 70);
 }
 .sidebar img{
     margin-top: 9px;
@@ -23,15 +23,17 @@
 }
 
 .sidebar ul li {
-    padding: 8px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
 .sidebar a{
+   width: 100%;
    color: #EDEDED;
    text-decoration: none;
    transition: filter 300ms ease-in;
+   border-radius: 8px;
+   padding: 8px 10px;
 }
 .button {
     border-radius: 8px;
@@ -72,11 +74,11 @@
 .navLink{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .navLink span{
     margin-left: 20px;
 }
 .navLinkActive{
+    border-radius: 8px;
     color: rgba(238,123,4,1);
 }

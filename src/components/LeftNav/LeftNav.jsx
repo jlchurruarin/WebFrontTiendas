@@ -17,6 +17,9 @@ function LeftNav(){
                     to={"/"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
+                    },
+                    {
+                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
                     }
                 )}
                   >
@@ -32,7 +35,11 @@ function LeftNav(){
                     to={"/commands"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
+                    },
+                    {
+                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                    }
+                  )}
                   >
                     <div className={styles.navLink}>
                     <TerminalIcon/>
@@ -45,7 +52,11 @@ function LeftNav(){
                     to={"/commandspricing"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
+                    },
+                    {
+                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                    }
+                  )}
                   >
                     <div className={styles.navLink}>
                     <TerminalIcon/>
@@ -58,7 +69,11 @@ function LeftNav(){
                     to={"/checksum"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
+                    },
+                    {
+                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                    }
+                  )}
                   >
                     <div className={styles.navLink}>
                     <FormatListNumberedIcon />
@@ -71,7 +86,11 @@ function LeftNav(){
                     to={"/map"}
                     style={({ isActive }) => ({
                       color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
-                    })}
+                    },
+                    {
+                      background: isActive ? "rgba(238, 125, 4, 0.5)" : "",
+                    }
+                  )}
                   >
                     <div className={styles.navLink}>
                     <LocationOnIcon/>
