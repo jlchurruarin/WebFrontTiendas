@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.5); /* Sombra del sidebar */
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.3); /* Sombra del sidebar */
 }
 .sidebar img{
     margin-top: 9px;
