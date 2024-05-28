@@ -1,0 +1,10 @@
+.BreadcrumbsNav{
+    position: fixed;
+    top: 80px;
+    left: 250px;
+    width: calc(100% - 250px);
+    color: white;
+    z-index: 1000; /* Asegura que la barra superior esté por encima del sidebar */
+    padding: 10px;
+    font-size: .9rem;
+}

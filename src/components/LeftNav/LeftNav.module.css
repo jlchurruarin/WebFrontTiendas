@@ -1,13 +1,18 @@
 .sidebar{
         position: fixed;
-        top:80px; /* Altura de la barra superior */
+        top:0; /* Altura de la barra superior */
         left: 0;
         width: 250px;
-        height: calc(100% - 80px);
+        height: 100%;
         background-color: #333;
         display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.5); /* Sombra del sidebar */
+}
+.sidebar img{
+    margin-top: 9px;
 }
 .sidebar ul {
     list-style-type: none;
@@ -61,4 +66,9 @@
     border-radius: 12px; /* Bordes redondeados */
     border: 2px solid #E6621F; /* Borde verde oscuro */
     font-size: 14px; /* Tamaño de la fuente */
+}
+.navLink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

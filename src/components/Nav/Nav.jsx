@@ -10,12 +10,7 @@ function Nav(){
     return (
         <nav className={styles.nav}>
           <ul >
-          <li>
-            <a href="/">
-          <img src={megaLogo} className={styles.logo} alt="Vite logo" />
-
-        </a>
-            </li>
+          
             <li><a className={styles.button} href="https://sites.google.com/gdnargentina.com/mdamegatech/instructivos" target="_blank">Instructivos</a></li>
           </ul>
         </nav>

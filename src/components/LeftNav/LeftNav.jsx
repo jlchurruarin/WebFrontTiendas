@@ -4,14 +4,15 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import WebIcon from '@mui/icons-material/Web';
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import { NavLink } from "react-router-dom";
+import megaLogo from  '../../assets/mega.png'
 import styles from './LeftNav.module.css';
 function LeftNav(){
     return (
         <nav className={styles.sidebar}>
           <ul>
-            
+          <img src={megaLogo} className={styles.logo} alt="Vite logo" />
           <li>
-                  <WebIcon/>
+          <WebIcon/>
                   <NavLink
                     to={"/"}
                     style={({ isActive }) => ({
@@ -19,6 +20,7 @@ function LeftNav(){
                     })}
                   >
                     WebFront
+
                   </NavLink>
                 </li>
                 <li>
