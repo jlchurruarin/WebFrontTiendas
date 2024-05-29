@@ -11,6 +11,7 @@ function LeftNav(){
         <nav className={styles.sidebar}>
           <ul>
           <img src={megaLogo} className={styles.logo} alt="Vite logo" />
+          <li className={styles.subTitles}>SOPORTE</li>
           <li>
           
                   <NavLink
@@ -64,6 +65,7 @@ function LeftNav(){
                     </div>
                   </NavLink>
                 </li>
+                <li className={styles.subTitles}>UTILITIES</li>
                 <li>
                   <NavLink
                     to={"/checksum"}

@@ -82,3 +82,11 @@
     border-radius: 8px;
     color: rgba(238,123,4,1);
 }
+.subTitles{
+    color: #EDEDED;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 3px 12px;
+    margin-bottom: 0px !important;
+}
