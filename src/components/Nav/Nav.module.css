@@ -4,6 +4,7 @@
     left: 250px;
     width: calc(100% - 250px);
     background-color: #242424;
+    border-bottom: 1px solid rgb(70, 70, 70);
     color: white;
 }
 .nav ul{
