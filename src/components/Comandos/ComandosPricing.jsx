@@ -86,7 +86,7 @@ function ComandosPricing() {
         <div className={styles.grid}>
           <div className={styles.divCard}>
             <p className={styles.nameComando}>verificar PMT en ARS</p>
-            <div className={styles}>
+            <div className={styles.card}>
               <input disabled className={styles.textInput} value={comandos[10]}></input>
               <button className={styles.btnCopy} onClick={() => copy(comandos[10])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
