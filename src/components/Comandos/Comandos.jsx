@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Snackbar from '@mui/material/Snackbar';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Loading from "../Loading/Loading";
-import '../Comandos/Comandos.css'
+import styles from'../Comandos/Comandos.module.css'
 
 function Comandos() {
   const [loading, setloading] = useState(true);
@@ -78,17 +78,17 @@ function Comandos() {
   return (
     <>
       {loading ? (
-        <Loading />
+        <div className={styles.mainContent}> <Loading /></div>
       ) : (
-        <div className='main-content'>
-<div className='container'>
-        <h1><span className='resaltado'>¡</span> Comandos Soporte POS <span className='resaltado'>!</span></h1>
-        <div className='grid'>
-          <div className='divCard'>
-            <p className='nameComando'>Estado linea de cajas</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[1]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[1])} title="copy">
+        <div className={styles.mainContent}>
+<div className={styles.container}>
+        <h1><span className={styles.resaltado}>¡</span> Comandos Soporte POS <span className='resaltado'>!</span></h1>
+        <div className={styles.grid}>
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Estado linea de cajas</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[1]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[1])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
               <Snackbar
@@ -100,83 +100,83 @@ function Comandos() {
               />
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Listar de cajas +info</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[9]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[9])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Listar de cajas +info</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[9]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[9])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Verificar dispositivos</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[2]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[2])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Verificar dispositivos</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[2]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[2])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Bloque comandos PinPad Error</p>
-            <div className="card">
-              <input disabled className='textInput' value="Bloque detener / borrar obj / iniciar"></input>
-              <button className='btnCopy' onClick={() => copy(comandos[0])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Bloque comandos PinPad Error</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value="Bloque detener / borrar obj / iniciar"></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[0])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Verificar Host</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[3]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[3])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Verificar Host</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[3]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[3])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Declarar OK AutoServicio o SSCO</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[4]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[4])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Declarar OK AutoServicio o SSCO</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[4]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[4])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Bloque restart servicios Epson </p>
-            <div className="card">
-              <input disabled className='textInput' value="Servicios epson: status / restart"></input>
-              <button className='btnCopy' onClick={() => copy(comandos[5])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Bloque restart servicios Epson </p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value="Servicios epson: status / restart"></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[5])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Bloque servicios WebFront</p>
-            <div className="card">
-              <input disabled className='textInput' value="Servicios WebFront: status / restart"></input>
-              <button className='btnCopy' onClick={() => copy(comandos[6])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Bloque servicios WebFront</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value="Servicios WebFront: status / restart"></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[6])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Verificar fabricante</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[7]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[7])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Verificar fabricante</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[7]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[7])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Estado servicios ARS</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[8]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[8])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Estado servicios ARS</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[8]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[8])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>

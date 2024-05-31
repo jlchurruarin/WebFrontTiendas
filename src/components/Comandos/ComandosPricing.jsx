@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Snackbar from '@mui/material/Snackbar';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Loading from "../Loading/Loading";
-import '../Comandos/Comandos.css'
+import styles from '../Comandos/Comandos.module.css'
 
 function ComandosPricing() {
   const [loading, setloading] = useState(true);
@@ -78,71 +78,71 @@ function ComandosPricing() {
   return (
     <>
       {loading ? (
-        <Loading />
+        <div className={styles.mainContent}> <Loading /></div>
       ) : (
-        <div className='main-content'>
-<div className='container'>
-        <h1><span className='resaltado'>¡</span> Comandos pricing <span className='resaltado'>!</span></h1>
-        <div className='grid'>
-          <div className='divCard'>
-            <p className='nameComando'>verificar PMT en ARS</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[10]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[10])} title="copy">
+        <div className={styles.mainContent}>
+<div className={styles.container}>
+        <h1><span className={styles.resaltado}>¡</span> Comandos pricing <span className='resaltado'>!</span></h1>
+        <div className={styles.grid}>
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>verificar PMT en ARS</p>
+            <div className={styles}>
+              <input disabled className={styles.textInput} value={comandos[10]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[10])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>verificar PMT en POS</p>
-            <div className="card">
-              <input disabled className='textInput' value={comandos[11]}></input>
-              <button className='btnCopy' onClick={() => copy(comandos[11])} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>verificar PMT en POS</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[11]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[11])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Obtener UPC:</p>
-            <div className="card">
-              <input className='textInput' placeholder='grep NUMERO_SKU /home/server/inq/M_HSHPLU.DAT | cut -c 4-15' onChange={handleChange}></input>
-              <button className='btnCopy' onClick={() => getUpc(value)} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Obtener UPC:</p>
+            <div className={styles.card}>
+              <input className={styles.textInput} placeholder='grep NUMERO_SKU /home/server/inq/M_HSHPLU.DAT | cut -c 4-15' onChange={handleChange}></input>
+              <button className={styles.btnCopy} onClick={() => getUpc(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Promociones asociadas a un UPC:</p>
-            <div className="card">
-              <input className='textInput' placeholder='grep NUMERO_UPC /root/SKYNET/dpfile3/FILE.PMT' onChange={handleChange}></input>
-              <button className='btnCopy' onClick={() => getPromo(value)} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Promociones asociadas a un UPC:</p>
+            <div className={styles.card}>
+              <input className={styles.textInput} placeholder='grep NUMERO_UPC /root/SKYNET/dpfile3/FILE.PMT' onChange={handleChange}></input>
+              <button className={styles.btnCopy} onClick={() => getPromo(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Verificar novedades en GMREC:</p>
-            <div className="card">
-              <input className='textInput' placeholder='grep NUMERO_UPC /home/NCR/ArsPluMnt/work/processed/GMREC*' onChange={handleChange}></input>
-              <button className='btnCopy' onClick={() => getGmrec(value)} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Verificar novedades en GMREC:</p>
+            <div className={styles.card}>
+              <input className={styles.textInput} placeholder='grep NUMERO_UPC /home/NCR/ArsPluMnt/work/processed/GMREC*' onChange={handleChange}></input>
+              <button className={styles.btnCopy} onClick={() => getGmrec(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Verificar precio en  ARS:</p>
-            <div className="card">
-              <input className='textInput' placeholder='grep NRO_UPC /home/reg/gd90/inq/M_HSHPLU.DAT | sort' onChange={handleChange}></input>
-              <button className='btnCopy' onClick={() => getPre(value)} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Verificar precio en  ARS:</p>
+            <div className={styles.card}>
+              <input className={styles.textInput} placeholder='grep NRO_UPC /home/reg/gd90/inq/M_HSHPLU.DAT | sort' onChange={handleChange}></input>
+              <button className={styles.btnCopy} onClick={() => getPre(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
-          <div className='divCard'>
-            <p className='nameComando'>Verificar precio en POS:</p>
-            <div className="card">
-              <input className='textInput' placeholder='grep NRO_UPC /home/server/inq/S_HSHPLU.DAT | sort' onChange={handleChange}></input>
-              <button className='btnCopy' onClick={() => getPrePos(value)} title="copy">
+          <div className={styles.divCard}>
+            <p className={styles.nameComando}>Verificar precio en POS:</p>
+            <div className={styles.card}>
+              <input className={styles.textInput} placeholder='grep NRO_UPC /home/server/inq/S_HSHPLU.DAT | sort' onChange={handleChange}></input>
+              <button className={styles.btnCopy} onClick={() => getPrePos(value)} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>

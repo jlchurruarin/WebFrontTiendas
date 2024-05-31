@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import RefreshIcon from '@mui/icons-material/Refresh';
 import Loading from "../Loading/Loading";
-import '../DigitoControl/DigitoControl.css'
+import styles from '../DigitoControl/DigitoControl.module.css'
 
 function DigitoControl() {
   const [loading, setloading] = useState(true);
@@ -47,25 +47,25 @@ function DigitoControl() {
   return (
     <>
       {loading ? (
-        <Loading />
+        <div className={styles.mainContent}> <Loading /></div>
       ) : (
-        <div className='main-content'>
-          <div className='containerCkeck'>
-        <h1><span className='resaltado'>¡</span> Calcular dígito de control EAN-13 <span className='resaltado'>!</span></h1>
-        <div className='containerCheckSum'>
+        <div className={styles.mainContent}>
+          <div className={styles.containerCkeck}>
+        <h1><span className={styles.resaltado}>¡</span> Calcular dígito de control EAN-13 <span className='resaltado'>!</span></h1>
+        <div className={styles.containerCheckSum}>
           
           
-            <p className='nameComando'>Código EAN-13 sin dígito de control:</p>
-            <div className="card">
-              <input className='inputCheckSum' placeholder='Ingrese EAN-12' onChange={handleChange}></input>
+            <p className={styles.nameComando}>Código EAN-13 sin dígito de control:</p>
+            <div className={styles.card}>
+              <input className={styles.inputCheckSum} placeholder='Ingrese EAN-12' onChange={handleChange}></input>
             </div>
-            <p className='nameComando'>Dígito de control calculado:</p>
-            <p className='inputCheckSum'>{checkDigit}</p>
+            <p className={styles.nameComando}>Dígito de control calculado:</p>
+            <p className={styles.inputCheckSum}>{checkDigit}</p>
 
-            <p className='nameComando'>EAN-13 calculado:</p>
-            <p className='inputCheckSum'>{ean13}</p>
+            <p className={styles.nameComando}>EAN-13 calculado:</p>
+            <p className={styles.inputCheckSum}>{ean13}</p>
           
-            <button className='btnCheck' onClick={() => calculateCheckDigit(ean12)} title="copy">
+            <button className={styles.btnCheck} onClick={() => calculateCheckDigit(ean12)} title="copy">
             <RefreshIcon sx={{ color: "#c06500" }}/> Calcular
               </button>
           

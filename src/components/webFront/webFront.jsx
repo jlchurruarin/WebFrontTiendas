@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { SearchTienda } from '../../utils/utils'
 import megaLogo from '../../assets/mega.png'
 import Loading from "../Loading/Loading";
-import '../webFront/webFront.css'
+import styles from '../webFront/webFront.module.css'
 function WebFront() {
   const [loading, setloading] = useState(true);
   const [text, setText] = useState("");
@@ -17,13 +17,14 @@ function WebFront() {
   return (
     <>
       {loading ? (
-        <Loading />
+        <div className={styles.mainContent}> <Loading /></div>
+       
       ) : (
-        <div className="main-content">
-<div className="containerWF">
-          <h1><span className="resaltado">¡</span> WebFront por tienda <span className="resaltado">!</span></h1>
-          <div className="cardWF">
-            <input className="inputWF"
+        <div className={styles.mainContent}>
+<div className={styles.containerWF}>
+          <h1><span className={styles.resaltado}>¡</span> WebFront por tienda <span className={styles.resaltado}>!</span></h1>
+          <div className={styles.cardWF}>
+            <input className={styles.inputWF}
               type="text"
               placeholder="Ingresa número de tienda"
               name=""
@@ -34,17 +35,17 @@ function WebFront() {
               autoFocus
               value={text}
             />
-            <button className="buttonWF" value="Buscar" onClick={() => {
+            <button className={styles.buttonWF} value="Buscar" onClick={() => {
               SearchTienda(text);
               setText("");
             }}
             >Buscar</button>
           </div>
-          <p className="read-the-docs">
-            Click en el botón <span className='resaltado'>" Buscar "</span> para abrir el WebFront de la tienda ingresada
+          <p className={styles.readTheDocs}>
+            Click en el botón <span className={styles.resaltado}>" Buscar "</span> para abrir el WebFront de la tienda ingresada
           </p>
-          <p className="read-the-docs">
-            <span className='resaltado'>Recordá tener activa la VPN</span>
+          <p className={styles.readTheDocs}>
+            <span className={styles.resaltado}>Recordá tener activa la VPN</span>
           </p>
         </div>
         </div>
