@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
     }
     .cg{
       font-weight: bold;

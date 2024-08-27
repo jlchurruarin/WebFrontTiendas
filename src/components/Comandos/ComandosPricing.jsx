@@ -82,7 +82,7 @@ function ComandosPricing() {
       ) : (
         <div className={styles.mainContent}>
 <div className={styles.container}>
-        <h1><span className={styles.resaltado}>¡</span> Comandos pricing <span className='resaltado'>!</span></h1>
+        <h1><span className={styles.resaltado}>¡</span> Comandos promociones <span className={styles.resaltado}>!</span></h1>
         <div className={styles.grid}>
           <div className={styles.divCard}>
             <p className={styles.nameComando}>verificar PMT en ARS</p>

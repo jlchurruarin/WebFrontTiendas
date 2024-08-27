@@ -6,6 +6,7 @@
     background-color: #242424;
     border-bottom: 1px solid rgb(70, 70, 70);
     color: white;
+    z-index: 1000;
 }
 .nav ul{
     height: 80px;

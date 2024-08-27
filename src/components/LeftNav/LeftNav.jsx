@@ -100,6 +100,23 @@ function LeftNav(){
                     </div>
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink
+                    to={"/monitortiendas"}
+                    style={({ isActive }) => ({
+                      color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
+                    },
+                    {
+                      background: isActive ? "rgba(238, 125, 4, 0.3)" : "",
+                    }
+                  )}
+                  >
+                    <div className={styles.navLink}>
+                    <LocationOnIcon/>
+                    <span>Monitor Tiendas</span>
+                    </div>
+                  </NavLink>
+                </li>
           </ul>
           <ul className={styles.version}>
         <li><span>v3.1</span></li>

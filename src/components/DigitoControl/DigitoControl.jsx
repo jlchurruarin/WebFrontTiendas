@@ -51,7 +51,7 @@ function DigitoControl() {
       ) : (
         <div className={styles.mainContent}>
           <div className={styles.containerCkeck}>
-        <h1><span className={styles.resaltado}>¡</span> Calcular dígito de control EAN-13 <span className='resaltado'>!</span></h1>
+        <h1><span className={styles.resaltado}>¡</span> Calcular dígito de control EAN-13 <span className={styles.resaltado}>!</span></h1>
         <div className={styles.containerCheckSum}>
           
           

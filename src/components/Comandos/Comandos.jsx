@@ -82,10 +82,36 @@ function Comandos() {
       ) : (
         <div className={styles.mainContent}>
 <div className={styles.container}>
-        <h1><span className={styles.resaltado}>¡</span> Comandos Soporte POS <span className='resaltado'>!</span></h1>
+
+        <div className={styles.h3SubTitle}>
+        <h3>Autoconnect SSCO</h3>
         <div className={styles.grid}>
+        <div className={styles.divCard}>
+            <p className={styles.nameComando}>* ID Hardware PINPAD</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value="vid:0x11CA pid:0x022D"></input>
+              <button className={styles.btnCopy} onClick={() => copy("vid:0x11CA pid:0x022D")} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Estado linea de cajas</p>
+            <p className={styles.nameComando}>* ID Hardware Impresora SSCO</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value="vid:0x4B8 pid:0x0E15"></input>
+              <button className={styles.btnCopy} onClick={() => copy("vid:0x4B8 pid:0x0E15")} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div className={styles.h3SubTitle}>
+        <h3>Estado Linea de cajas / ARS</h3>
+        <div className={styles.grid}>
+        <div className={styles.divCard}>
+            <p className={styles.nameComando}>* Estado linea de cajas</p>
             <div className={styles.card}>
               <input disabled className={styles.textInput} value={comandos[1]}></input>
               <button className={styles.btnCopy} onClick={() => copy(comandos[1])} title="copy">
@@ -101,7 +127,7 @@ function Comandos() {
             </div>
           </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Listar de cajas +info</p>
+            <p className={styles.nameComando}>* Listar de cajas +info</p>
             <div className={styles.card}>
               <input disabled className={styles.textInput} value={comandos[9]}></input>
               <button className={styles.btnCopy} onClick={() => copy(comandos[9])} title="copy">
@@ -110,16 +136,30 @@ function Comandos() {
             </div>
           </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Verificar dispositivos</p>
+            <p className={styles.nameComando}>* Estado servicios ARS</p>
             <div className={styles.card}>
-              <input disabled className={styles.textInput} value={comandos[2]}></input>
-              <button className={styles.btnCopy} onClick={() => copy(comandos[2])} title="copy">
+              <input disabled className={styles.textInput} value={comandos[8]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[8])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Bloque comandos PinPad Error</p>
+            <p className={styles.nameComando}>* Reinicio servicios WebFront</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value="Servicios WebFront: status / restart"></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[6])} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className={styles.h3SubTitle}>
+        <h3>Error PINPAD / Declarar OK - POS Defectuosa / Servicios EPSON</h3>
+        <div className={styles.grid}>
+        <div className={styles.divCard}>
+            <p className={styles.nameComando}>* Bloque comandos PinPad Error</p>
             <div className={styles.card}>
               <input disabled className={styles.textInput} value="Bloque detener / borrar obj / iniciar"></input>
               <button className={styles.btnCopy} onClick={() => copy(comandos[0])} title="copy">
@@ -128,16 +168,7 @@ function Comandos() {
             </div>
           </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Verificar Host</p>
-            <div className={styles.card}>
-              <input disabled className={styles.textInput} value={comandos[3]}></input>
-              <button className={styles.btnCopy} onClick={() => copy(comandos[3])} title="copy">
-                <ContentCopyIcon sx={{ color: "#c06500" }} />
-              </button>
-            </div>
-          </div>
-          <div className={styles.divCard}>
-            <p className={styles.nameComando}>Declarar OK AutoServicio o SSCO</p>
+            <p className={styles.nameComando}>* Declarar OK AutoServicio o SSCO</p>
             <div className={styles.card}>
               <input disabled className={styles.textInput} value={comandos[4]}></input>
               <button className={styles.btnCopy} onClick={() => copy(comandos[4])} title="copy">
@@ -146,25 +177,16 @@ function Comandos() {
             </div>
           </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Bloque restart servicios Epson </p>
+            <p className={styles.nameComando}>* Verificar dispositivos</p>
             <div className={styles.card}>
-              <input disabled className={styles.textInput} value="Servicios epson: status / restart"></input>
-              <button className={styles.btnCopy} onClick={() => copy(comandos[5])} title="copy">
+              <input disabled className={styles.textInput} value={comandos[2]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[2])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Bloque servicios WebFront</p>
-            <div className={styles.card}>
-              <input disabled className={styles.textInput} value="Servicios WebFront: status / restart"></input>
-              <button className={styles.btnCopy} onClick={() => copy(comandos[6])} title="copy">
-                <ContentCopyIcon sx={{ color: "#c06500" }} />
-              </button>
-            </div>
-          </div>
-          <div className={styles.divCard}>
-            <p className={styles.nameComando}>Verificar fabricante</p>
+            <p className={styles.nameComando}>* Verificar fabricante</p>
             <div className={styles.card}>
               <input disabled className={styles.textInput} value={comandos[7]}></input>
               <button className={styles.btnCopy} onClick={() => copy(comandos[7])} title="copy">
@@ -173,14 +195,15 @@ function Comandos() {
             </div>
           </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Estado servicios ARS</p>
+            <p className={styles.nameComando}>* Bloque restart servicios Epson </p>
             <div className={styles.card}>
-              <input disabled className={styles.textInput} value={comandos[8]}></input>
-              <button className={styles.btnCopy} onClick={() => copy(comandos[8])} title="copy">
+              <input disabled className={styles.textInput} value="Servicios epson: status / restart"></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[5])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
           </div>
+        </div>
         </div>
       </div>
         </div>
