@@ -83,7 +83,7 @@
     color:rgba(238,123,4,1);
     margin: 0;
     padding: 10px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 0 0 0 0;
     border-top: 1px solid rgba(238,123,4,1);
     border-right: 1px solid rgba(238,123,4,1);
     border-left: 1px solid rgba(238,123,4,1);
@@ -112,4 +112,12 @@
     padding: 0;
     width: 100%;
     margin-bottom: 50px;
+  }
+  .subTitle{
+    color: #ededed;
+    padding: 5px;
+    border-radius: 8px 8px 0 0;
+    border-left: 1px solid rgba(238,123,4,1);
+    margin-bottom: 0;
+    background: -webkit-linear-gradient(45deg, #ee7b04,#242424,#242424);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(45deg, #ee7b04,#242424,#242424);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
   }

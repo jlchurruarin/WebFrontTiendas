@@ -84,7 +84,7 @@ function Comandos() {
 <div className={styles.container}>
 
         <div className={styles.h3SubTitle}>
-        <h3>Autoconnect SSCO</h3>
+        <h3 className={styles.subTitle}>Autoconnect SSCO</h3>
         <div className={styles.grid}>
         <div className={styles.divCard}>
             <p className={styles.nameComando}>* ID Hardware PINPAD</p>
@@ -108,7 +108,7 @@ function Comandos() {
 
         </div>
         <div className={styles.h3SubTitle}>
-        <h3>Estado Linea de cajas / ARS</h3>
+        <h3 className={styles.subTitle}>Estado Linea de cajas / ARS</h3>
         <div className={styles.grid}>
         <div className={styles.divCard}>
             <p className={styles.nameComando}>* Estado linea de cajas</p>
@@ -156,7 +156,7 @@ function Comandos() {
         </div>
         </div>
         <div className={styles.h3SubTitle}>
-        <h3>Error PINPAD / Declarar OK - POS Defectuosa / Servicios EPSON</h3>
+        <h3 className={styles.subTitle}>Error PINPAD / Declarar OK - POS Defectuosa / Servicios EPSON</h3>
         <div className={styles.grid}>
         <div className={styles.divCard}>
             <p className={styles.nameComando}>* Bloque comandos PinPad Error</p>
