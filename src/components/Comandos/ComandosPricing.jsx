@@ -48,6 +48,14 @@ function ComandosPricing() {
     }
 
   }
+  function getPromoInfo(value){
+    if(value==""){
+       alert("Ingrese UPC/Texto")
+    }else{
+      navigator.clipboard.writeText(`grep ${value} /root/SKYNET/dpfile3/FILE.PMT | awk -F "," '{print "-------\\nID: "$3"\\nNombre: \\x1b[33m"$5"\\x1b[0m\\nFecha de inicio: "substr($6, 7, 2)"-"substr($6, 5, 2)"-"substr($6, 1, 4)" "$7"\\nFecha de fin: "substr($8, 7, 2)"-"substr($8, 5, 2)"-"substr($8, 1, 4)" "$9; if($108 ~ /[[:space:]]/) print "\\x1b[31mLA PROMOCIÓN TIENE ESPACIOS"; else print "\\x1b[32mLA PROMOCIÓN NO TIENE ESPACIOS"}'`);
+    }
+     
+  }
   function getPrePos(value) {
 
     if (value == "") {
@@ -84,6 +92,15 @@ function ComandosPricing() {
 <div className={styles.container}>
         <h1><span className={styles.resaltado}>¡</span> Comandos promociones <span className={styles.resaltado}>!</span></h1>
         <div className={styles.grid}>
+        <div className={styles.divCard}>
+            <p className={styles.nameComando}>Promoción info:</p>
+            <div className={styles.card}>
+              <input className={styles.textInput} placeholder='Ingrese Id / UPC / dato relacionado' onChange={handleChange}></input>
+              <button className={styles.btnCopy} onClick={() => getPromoInfo(value)} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
           <div className={styles.divCard}>
             <p className={styles.nameComando}>verificar PMT en ARS</p>
             <div className={styles.card}>
