@@ -52,7 +52,7 @@ function ComandosPricing() {
     if(value==""){
        alert("Ingrese UPC/Texto")
     }else{
-      navigator.clipboard.writeText(`grep 0779067005223 /root/SKYNET/dpfile3/FILE.PMT | awk -F "," '{print "-------\\nID: "$3"\\nNombre: \\x1b[33m"$5"\\x1b[0m\\nFecha de inicio: "substr($6, 7, 2)"-"substr($6, 5, 2)"-"substr($6, 1, 4)" "$7"\\nFecha de fin: "substr($8, 7, 2)"-"substr($8, 5, 2)"-"substr($8, 1, 4)" "$9; print "Lista de tiendas: "$25; if($108 ~ /[[:space:]]/) print "\\x1b[31mLA PROMOCIÓN TIENE ESPACIOS\\x1b[0m"; else print "\\x1b[32mLA PROMOCIÓN NO TIENE ESPACIOS\\x1b[0m"}'`);
+      navigator.clipboard.writeText(`grep ${value} /root/SKYNET/dpfile3/FILE.PMT | awk -F "," '{print "\\n\\x1b[32m******************* VERIFICAR PROMOCIONES *******************\\n\\n\\x1b[0m\\n******************* ID PROMOCIÓN ******************* \\n\\n - "$3"\\n\\n******************* NOMBRE ******************* \\n\\n - \\x1b[33m"$5"\\x1b[0m\\n\\n - Fecha de inicio: "substr($6, 7, 2)"-"substr($6, 5, 2)"-"substr($6, 1, 4)" "$7"\\n - Fecha de fin: "substr($8, 7, 2)"-"substr($8, 5, 2)"-"substr($8, 1, 4)" "$9;if($108 ~ /[[:space:]]/) print "\\x1b[31m - LA PROMOCIÓN TIENE ESPACIOS\\x1b[0m"; else print "\\x1b[32m - LA PROMOCIÓN NO TIENE ESPACIOS\\x1b[0m"; print "\\n\\n******************* LISTA DE TIENDAS ******************* \\n\\n - "$25; print "\\n\\n\\x1b[32m******************** FIN *******************\\x1b[0m" }'`);
     }
      
   }
