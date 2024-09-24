@@ -61,7 +61,7 @@ function LeftNav(){
                   >
                     <div className={styles.navLink}>
                     <TerminalIcon/>
-                    <span>Comandos Pricing</span>
+                    <span>Promociones</span>
                     </div>
                   </NavLink>
                 </li>

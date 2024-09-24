@@ -90,31 +90,16 @@ function ComandosPricing() {
       ) : (
         <div className={styles.mainContent}>
 <div className={styles.container}>
-        <h1><span className={styles.resaltado}>¡</span> Comandos promociones <span className={styles.resaltado}>!</span></h1>
-        <div className={styles.grid}>
-        <div className={styles.divCard}>
+
+
+<div className={styles.h3SubTitle}>
+<h3 className={styles.subTitle}>Verificación de Promociones</h3>
+<div className={styles.grid}>
+<div className={styles.divCard}>
             <p className={styles.nameComando}>Promoción info:</p>
             <div className={styles.card}>
               <input className={styles.textInput} placeholder='Ingrese Id / UPC / dato relacionado' onChange={handleChange}></input>
               <button className={styles.btnCopy} onClick={() => getPromoInfo(value)} title="copy">
-                <ContentCopyIcon sx={{ color: "#c06500" }} />
-              </button>
-            </div>
-          </div>
-          <div className={styles.divCard}>
-            <p className={styles.nameComando}>verificar PMT en ARS</p>
-            <div className={styles.card}>
-              <input disabled className={styles.textInput} value={comandos[10]}></input>
-              <button className={styles.btnCopy} onClick={() => copy(comandos[10])} title="copy">
-                <ContentCopyIcon sx={{ color: "#c06500" }} />
-              </button>
-            </div>
-          </div>
-          <div className={styles.divCard}>
-            <p className={styles.nameComando}>verificar PMT en POS</p>
-            <div className={styles.card}>
-              <input disabled className={styles.textInput} value={comandos[11]}></input>
-              <button className={styles.btnCopy} onClick={() => copy(comandos[11])} title="copy">
                 <ContentCopyIcon sx={{ color: "#c06500" }} />
               </button>
             </div>
@@ -129,15 +114,6 @@ function ComandosPricing() {
             </div>
           </div>
           <div className={styles.divCard}>
-            <p className={styles.nameComando}>Promociones asociadas a un UPC:</p>
-            <div className={styles.card}>
-              <input className={styles.textInput} placeholder='grep NUMERO_UPC /root/SKYNET/dpfile3/FILE.PMT' onChange={handleChange}></input>
-              <button className={styles.btnCopy} onClick={() => getPromo(value)} title="copy">
-                <ContentCopyIcon sx={{ color: "#c06500" }} />
-              </button>
-            </div>
-          </div>
-          <div className={styles.divCard}>
             <p className={styles.nameComando}>Verificar novedades en GMREC:</p>
             <div className={styles.card}>
               <input className={styles.textInput} placeholder='grep NUMERO_UPC /home/NCR/ArsPluMnt/work/processed/GMREC*' onChange={handleChange}></input>
@@ -146,7 +122,41 @@ function ComandosPricing() {
               </button>
             </div>
           </div>
+  </div>
+  </div>
+
+<div className={styles.h3SubTitle}>
+<h3 className={styles.subTitle}>Verificar PMT</h3>
+<div className={styles.grid}>
+<div className={styles.divCard}>
+            <p className={styles.nameComando}>PMT en ARS</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[10]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[10])} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
           <div className={styles.divCard}>
+            <p className={styles.nameComando}>PMT en POS</p>
+            <div className={styles.card}>
+              <input disabled className={styles.textInput} value={comandos[11]}></input>
+              <button className={styles.btnCopy} onClick={() => copy(comandos[11])} title="copy">
+                <ContentCopyIcon sx={{ color: "#c06500" }} />
+              </button>
+            </div>
+          </div>
+          </div>
+          </div>
+
+ 
+  
+
+
+  <div className={styles.h3SubTitle}>
+<h3 className={styles.subTitle}>Verificación de precio regular</h3>
+<div className={styles.grid}>
+<div className={styles.divCard}>
             <p className={styles.nameComando}>Verificar precio en  ARS:</p>
             <div className={styles.card}>
               <input className={styles.textInput} placeholder='grep NRO_UPC /home/reg/gd90/inq/M_HSHPLU.DAT | sort' onChange={handleChange}></input>
@@ -164,9 +174,18 @@ function ComandosPricing() {
               </button>
             </div>
           </div>
-        </div>
-      </div>
-        </div>
+
+  </div>
+  </div>
+  </div>
+        
+          
+          
+          
+          
+
+
+  </div>
       
       )}
     </>

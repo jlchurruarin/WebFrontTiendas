@@ -11,8 +11,7 @@
     justify-content: space-between;
     z-index: 1000;
     border-right: 1px solid rgb(70, 70, 70);
-    background: -webkit-linear-gradient(45deg, #ee7b04,#242424,#242424);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(45deg, #ee7b04,#242424,#242424);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
-}
+}                      
 .sidebar img{
     margin-top: 9px;
     margin-bottom: 20px;
