@@ -77,7 +77,7 @@ function ComandosPricing() {
     "service epson_devicecontrollogserviced status\nservice epson_pcsvcd status\nservice epson_pcsvcd restart\nservice epson_devicecontrollogserviced restart\n",
     "service Wildfly status\nservice Wildfly restart\nservice ArsPluMnt status\nservice ArsPluMnt restart\nservice POSServerRest status\nservice POSServerRest restart\nservice UserWatcher status\nservice UserWatcher restart",
     "dmidecode -t system", "service --status-all","pos ws-list","cd /root/SKYNET/dpfile3/ && ll",'cd "/home/reg/DP/NCR/DigitalPromotions/Promotion Files" && ll']
-  const commandValidatePMT = `cat /root/SKYNET/dpfile3/FILE.PMT | awk -F "," '{ if($44 ~ /[[:space:]]/) { print "LA PROMOCION $3 TIENE ESPACIOS\x1b[0m"; print "UPC: "; system("grep -o \"[0-9]\\{10,13\\}\" <<< \"" $44 "\"") }}'`
+  const commandValidatePMT = `cat /root/SKYNET/dpfile3/FILE.PMT | awk -F "," '{ if($44 ~ /[[:space:]]/) { print "LA PROMOCION $3 TIENE ESPACIOS\\x1b[0m"; print "UPC: "; system("grep -o \\"[0-9]\\\\{10,13\\\\}\\" <<< \\"" $44 "\\"") }}'`
   useEffect(() => {
     const timer = setTimeout(() => {
       setloading(false);
