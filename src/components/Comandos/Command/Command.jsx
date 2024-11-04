@@ -10,7 +10,7 @@ function Command({ commandName, placeHolder, command, alertMsg = "" }) {
 
     var inputEnable = false;
 
-    if (command.includes("$inputValue")) {
+    if (command.includes("$inputValue$")) {
         inputEnable = true;
     }
 
