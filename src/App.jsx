@@ -8,14 +8,17 @@ import MonitorTiendas from './components/MonitorTiendas/MonitorTiendas.jsx'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LeftNav from './components/LeftNav/LeftNav.jsx'
+<<<<<<< HEAD
 import BreadcrumbsNav from './components/Beadcrumbs/BreadcrumbsNav.jsx'
 import Link from '@mui/material/Link';
 import DirectorioTiendas from './components/DirectorioTiendas/DirectorioTiendas.jsx'
+=======
+>>>>>>> 6a371fc93e148de64f16a9a96377b076e6b23294
 
 function App() {
   return (
     <>
-    <Nav/>
+      <Nav/>
       <BrowserRouter>
       <LeftNav/>
           <Routes>
