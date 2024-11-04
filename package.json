@@ -10,17 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.16.7",
-=======
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.16.7",
-    "@mui/material": "^5.14.18",
->>>>>>> 6a371fc93e148de64f16a9a96377b076e6b23294
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
