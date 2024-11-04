@@ -24,8 +24,8 @@ function Comandos() {
         <div className={styles.mainContent}>
           <div className={styles.container}>
             <CommandCategory title="Autoconnect SSCO">
-              <Command commandName="* ID Hardware PINPAD" placeHolder="vid:0x11CA pid:0x022D" command="vid:0x11CA pid:0x022D"/>
-              <Command commandName="* ID Hardware Impresora SSCO" placeHolder="vid:0x4B8 pid:0x0E15" command="vid:0x4B8 pid:0x0E15"/>
+              <Command commandName="* ID Hardware PINPAD" placeHolder="vid:0x11CA pid:0x022D" command="vid:0x11CA pid:0x022D" helpText="Vid y Pid para configurar autoconnect"/>
+              <Command commandName="* ID Hardware Impresora SSCO" placeHolder="vid:0x4B8 pid:0x0E15" command="vid:0x4B8 pid:0x0E15" helpText="Vid y Pid para configurar autoconnect"/>
             </CommandCategory>
             <CommandCategory title="Estado Linea de cajas / ARS">
               <Command commandName="* Estado linea de cajas" placeHolder="/home/WMAR/check_POS.sh" command="/home/WMAR/check_POS.sh"/>

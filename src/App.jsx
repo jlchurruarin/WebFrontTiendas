@@ -8,13 +8,11 @@ import MonitorTiendas from './components/MonitorTiendas/MonitorTiendas.jsx'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LeftNav from './components/LeftNav/LeftNav.jsx'
-import BreadcrumbsNav from './components/Beadcrumbs/BreadcrumbsNav.jsx'
-import Link from '@mui/material/Link';
 
 function App() {
   return (
     <>
-    <Nav/>
+      <Nav/>
       <BrowserRouter>
       <LeftNav/>
           <Routes>
