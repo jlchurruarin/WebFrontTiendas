@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LeftNav from './components/LeftNav/LeftNav.jsx'
 import BreadcrumbsNav from './components/Beadcrumbs/BreadcrumbsNav.jsx'
 import Link from '@mui/material/Link';
+import DirectorioTiendas from './components/DirectorioTiendas/DirectorioTiendas.jsx'
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
             <Route path="/" element={<WebFront/>} />
             <Route path="/commands" element={<Comandos/>} />
             <Route path="/commandspricing" element={<ComandosPricing/>} />
+            <Route path="/tiendas" element={<DirectorioTiendas/>} />
             <Route path="/checksum" element={<DigitoControl/>} />
             <Route path="/map" element={<Mapa/>} />
-            <Route path="/monitortiendas" element={<MonitorTiendas/>} />
           </Routes>
       </BrowserRouter>
     </>
