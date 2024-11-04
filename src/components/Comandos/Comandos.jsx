@@ -32,7 +32,6 @@ function Comandos() {
               <Command commandName="* Listar de cajas +info" placeHolder="pos ws-list" command="pos ws-list"/>
               <Command commandName="* Estado servicios ARS" placeHolder="service --status-all" command="service --status-all"/>
               <Command commandName="* Reinicio servicios WebFront" placeHolder="Servicios WebFront: status / restart" command={"service Wildfly status\nservice Wildfly restart\nservice ArsPluMnt status\nservice ArsPluMnt restart\nservice POSServerRest status\nservice POSServerRest restart\nservice UserWatcher status\nservice UserWatcher restart"}/>
-              <Command commandName="" placeHolder="" command=""/>
             </CommandCategory>
             <CommandCategory title="Error PINPAD / Declarar OK - POS Defectuosa / Servicios EPSON">
               <Command commandName="* Bloque comandos PinPad Error" placeHolder="Bloque detener / borrar obj / iniciar" command={"service emv stop\ncd /home/VTOLServices/emvkit/config/\nrm application.obj\nrm auditTransaction.obj\nrm auditVoucherTransaction.obj\nrm crypt.properties\nrm LAST_RSA.pem\nrm session.obj\nrm workingKeys.properties\nservice emv start\ncat /home/VTOLServices/emvkit/config/application.obj"} />
