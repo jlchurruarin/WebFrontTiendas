@@ -4,7 +4,7 @@ import CopyButton from "../CopyButton/CopyButton";
 import styles from'../../Comandos/Comandos.module.css'
 import { useState } from 'react'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 
@@ -57,11 +57,13 @@ function Command({ children, commandName, command, placeHolder = "", alertMsg = 
 
     <div className={styles.divCard}>
         <p className={styles.nameComando}>{commandName}
+            <span className={styles.helpButton}>
             <Tooltip title={helpText}>
-                <Button sx={{ m: 1 }}>
+                <IconButton size="small" color="warning" aria-label="ayuda">
                     <HelpOutlineIcon/>
-                </Button>
+                </IconButton>
             </Tooltip>
+            </span>
         </p>
         <div className={styles.card}>
             <input disabled={!inputEnable} className={styles.textInput} placeholder={placeHolder} onChange={handleChange}></input>
