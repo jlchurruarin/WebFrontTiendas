@@ -8,6 +8,7 @@ import MonitorTiendas from './components/MonitorTiendas/MonitorTiendas.jsx'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LeftNav from './components/LeftNav/LeftNav.jsx'
+import DirectorioTiendas from './components/DirectorioTiendas/DirectorioTiendas.jsx'
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
             <Route path="/" element={<WebFront/>} />
             <Route path="/commands" element={<Comandos/>} />
             <Route path="/commandspricing" element={<ComandosPricing/>} />
+            <Route path="/tiendas" element={<DirectorioTiendas/>} />
             <Route path="/checksum" element={<DigitoControl/>} />
             <Route path="/map" element={<Mapa/>} />
-            <Route path="/monitortiendas" element={<MonitorTiendas/>} />
           </Routes>
       </BrowserRouter>
     </>

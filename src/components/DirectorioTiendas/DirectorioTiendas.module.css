@@ -1,0 +1,33 @@
+.mainContent {
+    margin-top: 80px; /* Altura de la barra superior */
+    margin-left: 250px; /* Ancho del menú lateral */
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por debajo de la barra superior y del sidebar */
+  }
+    .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 150px;
+    }
+
+    .table{
+        background-color: #242424;
+        color: white!important;
+    }
+    .tableRow{
+        color: white !important;
+        font-weight:900;
+        background: -webkit-linear-gradient(45deg, #ee7b04,#7a4207,#242424);/* Chrome 10-25, Safari 5.1-6 */   
+    }
+    .tableCell
+    {
+        color: white  !important;
+    }
+    .searchBottom{
+        border-color: #ee7b04 !important;
+    }

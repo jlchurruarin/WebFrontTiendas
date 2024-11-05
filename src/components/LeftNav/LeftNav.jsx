@@ -2,6 +2,7 @@ import React from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import WebIcon from '@mui/icons-material/Web';
+import BackupTableIcon from '@mui/icons-material/BackupTable';
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import { NavLink } from "react-router-dom";
 import megaLogo from  '../../assets/mega.png'
@@ -66,6 +67,23 @@ function LeftNav(){
                   </NavLink>
                 </li>
                 <li className={styles.subTitles}>UTILITIES</li>
+                <li>
+                  <NavLink
+                    to={"/tiendas"}
+                    style={({ isActive }) => ({
+                      color: isActive ? "rgba(238,123,4,1)" : "#EDEDED",
+                    },
+                    {
+                      background: isActive ? "rgba(238, 125, 4, 0.3)" : "",
+                    }
+                  )}
+                  >
+                    <div className={styles.navLink}>
+                      <BackupTableIcon />
+                    <span>Directorio Tiendas</span>
+                    </div>
+                  </NavLink>
+                </li>
                 <li>
                   <NavLink
                     to={"/checksum"}
