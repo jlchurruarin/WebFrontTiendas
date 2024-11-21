@@ -34,8 +34,8 @@ function ComandosPricing() {
               <Command commandName="PMT en POS" placeHolder='cd "/home/reg/DP/NCR/DigitalPromotions/Promotion Files" && ll' command='cd "/home/reg/DP/NCR/DigitalPromotions/Promotion Files" && ll'/>
             </CommandCategory>
             <CommandCategory title="Verificación de precio regular">
-              <Command commandName="Verificar precio en ARS:" placeHolder='grep NRO_UPC /home/reg/gd90/inq/M_HSHPLU.DAT | sort' command='grep $inputValue$ /home/reg/gd90/inq/M_HSHPLU.DAT | sort' alertMsg='Ingrese un UPC'/>
-              <Command commandName="Verificar precio en POS:" placeHolder="grep NRO_UPC /home/server/inq/S_HSHPLU.DAT | sort" command="grep $inputValue$ /home/server/inq/S_HSHPLU.DAT | sort" alertMsg='Ingrese un UPC'/>
+            <Command commandName="Verificar precio en ARS:" placeHolder='grep NRO_UPC /home/server/inq/S_HSHPLU.DAT | sort' command='grep $inputValue$ /home/server/inq/S_HSHPLU.DAT | sort' alertMsg='Ingrese un UPC'/>
+            <Command commandName="Verificar precio en POS:" placeHolder="grep NRO_UPC /home/reg/gd90/inq/M_HSHPLU.DAT | sort" command="grep $inputValue$ /home/reg/gd90/inq/M_HSHPLU.DAT | sort" alertMsg='Ingrese un UPC'/>
             </CommandCategory>
           </div>
         </div>
