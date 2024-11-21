@@ -24,7 +24,7 @@ function Comandos() {
         <div className={styles.mainContent}>
           <div className={styles.container}>
           <CommandCategory title="ARS - Servidor de tienda">
-              <Command commandName="* Estado linea de cajas" placeHolder="/home/WMAR/check_POS.sh" command="/home/WMAR/check_POS.sh"/>
+              <Command commandName="* Estado linea de cajas" placeHolder="/home/WMAR/check_POS.sh" command="/home/WMAR/check_POS.sh" helpUrl="https://drive.google.com/file/d/1QY20SzvNonbXEY7cfhNSAx6Ekp4DiheB/edit"/>
               <Command commandName="* Listar de cajas +info" placeHolder="pos ws-list" command="pos ws-list"/>
               <Command commandName="* Estado servicios ARS" placeHolder="service --status-all" command="service --status-all"/>
               <Command commandName="* Reinicio servicios WebFront" placeHolder="Servicios WebFront: status / restart" command={"service Wildfly status\nservice Wildfly restart\nservice ArsPluMnt status\nservice ArsPluMnt restart\nservice POSServerRest status\nservice POSServerRest restart\nservice UserWatcher status\nservice UserWatcher restart"}/>
