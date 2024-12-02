@@ -69,15 +69,15 @@ function ComandosPricing() {
             </CommandCategory>
             <CommandCategory title="Verificación de precio regular">
               <Command commandName="Verificar precio en ARS:" 
-                placeHolder='grep NRO_UPC /home/server/inq/S_HSHPLU.DAT | sort' 
-                command='grep $inputValue$ /home/server/inq/S_HSHPLU.DAT | sort' 
+                placeHolder='grep NRO_UPC /home/server/inq/M_HSHPLU.DAT | sort' 
+                command='grep $inputValue$ /home/server/inq/M_HSHPLU.DAT | sort' 
                 alertMsg='Ingrese un UPC'
                 helpText='Permite verificar el precio de un producto con su UPC'
                 />
               <Command 
                 commandName="Verificar precio en POS:" 
-                placeHolder="grep NRO_UPC /home/reg/gd90/inq/M_HSHPLU.DAT | sort" 
-                command="grep $inputValue$ /home/reg/gd90/inq/M_HSHPLU.DAT | sort" 
+                placeHolder="grep NRO_UPC /home/reg/gd90/inq/S_HSHPLU.DAT | sort" 
+                command="grep $inputValue$ /home/reg/gd90/inq/S_HSHPLU.DAT | sort" 
                 alertMsg='Ingrese un UPC'
                 helpText='Permite verificar el precio de un producto con su UPC'
                 />
