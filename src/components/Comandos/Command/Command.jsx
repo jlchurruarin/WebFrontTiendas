@@ -3,12 +3,11 @@ import React from "react";
 import CopyButton from "../CopyButton/CopyButton";
 import styles from'../../Comandos/Comandos.module.css'
 import { useState } from 'react'
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import IconButton from '@mui/material/IconButton';
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import HelpButton from "../HelpButton/HelpButton";
 
 
-function Command({ children, commandName, command, placeHolder = "", alertMsg = "", helpText = ""}) {
+
+function Command({ children, commandName, command, placeHolder = "", alertMsg = "", helpText = "", helpUrl}) {
     
     const [value, valuInput] = useState("");
 
@@ -57,13 +56,7 @@ function Command({ children, commandName, command, placeHolder = "", alertMsg = 
 
     <div className={styles.divCard}>
         <p className={styles.nameComando}>{commandName}
-            <span className={styles.helpButton}>
-            <Tooltip title={helpText}>
-                <IconButton size="small" color="warning" aria-label="ayuda">
-                    <HelpOutlineIcon/>
-                </IconButton>
-            </Tooltip>
-            </span>
+            <HelpButton helpText={helpText} url={helpUrl} />
         </p>
         <div className={styles.card}>
             <input disabled={!inputEnable} className={styles.textInput} placeholder={placeHolder} onChange={handleChange}></input>
