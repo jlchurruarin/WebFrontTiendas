@@ -28,11 +28,15 @@
         background-color: #242424!important;
     }
     .cardContent{
+        text-align: center;
         background-color: #242424;
         color: white!important;
         border-radius: 0!important;
         border: 0!important;
         box-shadow:none!important;
+    }
+    .cardContent img{
+        margin-bottom: 25px;
     }
     .cardContainerLogin{
     width: 100%;
@@ -95,6 +99,18 @@
                 color: white;
            margin-top: 25px;
     }
+    .btnSession{
+        border-radius: 8px;
+            border: 1px solid rgba(238,123,4,1);
+            padding: 0.6em 1.2em;
+            font-size: 1em;
+            font-weight: 500;
+            background-color: #1a1a1a;
+            cursor: pointer;
+            transition: border-color 0.25s;
+            transition: filter 300ms ease-in;
+            color: white;
+    }
     .btnAdd:hover{
        background-color:rgba(238,123,4,1);
     }
@@ -132,4 +148,10 @@
         background-color: #1a1a1a;
         line-height: 20px;
         font-weight: bold;
+      }
+
+      .appBar{
+        background: -webkit-linear-gradient(45deg, #ee7b04,#7a4207,#242424);/* Chrome 10-25, Safari 5.1-6 */
+        border-radius: 10px;
+        margin-bottom: 30px;
       }
